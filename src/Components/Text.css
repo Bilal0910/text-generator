@@ -1,0 +1,36 @@
+main {
+    padding: 40px;
+}
+
+
+.form {
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 16px;
+}
+
+.form-input {
+    border-radius: 12px;
+    border: 1px solid #f6f4fa;
+    box-shadow: 1px 1px 10px 4px rgb(5, 0, 0);
+    text-indent: 7px;
+    
+}
+
+.form-button {
+    grid-column: 1 / -1;
+    border-radius: 12px;
+    border: 1px solid #f6f4fa;
+    box-shadow: 1px 1px 10px 4px rgb(5, 0, 0);
+    background: linear-gradient(90deg, #000000 1.18%,  #fbfbfd 100%);
+    color: rgb(253, 249, 249);
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.memeImage {
+    max-width: 100%;
+}
