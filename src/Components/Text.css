@@ -33,4 +33,10 @@ main {
 
 .memeImage {
     max-width: 100%;
+    margin-top: 20px;
+}
+
+.imageBorder {
+    display: flex;
+    justify-content: center;
 }

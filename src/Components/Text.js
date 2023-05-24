@@ -10,14 +10,11 @@ function Text() {
         randomImage : "http://i.imgflip.com/1bij.jpg"
     })
 
-    const [ allImages ] = useState(data)
-
-
     function getImages() {
-        const imageArray = allImages.data.memes
+        const imageArray = data.data.memes
         const randomNum = Math.floor(Math.random() * imageArray.length)
         const url = imageArray[randomNum].url
-        setTextImage(prevText => ({
+        setTextImage( prevText => ({
                 ...prevText,
                 randomImage : url
         }))
@@ -40,7 +37,10 @@ function Text() {
           >
             Get a new picture 🖼</button>
         </div>
-        <img className='memeImage' src={textImage.randomImage} alt="" />
+        <div className="imageBorder">
+           <img className='memeImage' src={textImage.randomImage} alt="" />
+        </div>
+        
         
     </main>
   )
