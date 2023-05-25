@@ -44,7 +44,7 @@ function Text() {
                  type="text"
                  placeholder='bottom text here'
                  name='bottomText'
-                 value={textImage.bottomtext}
+                 value={textImage.bottomText}
                  onChange={handlechange}
           />
           <button className='form-button'
@@ -54,6 +54,8 @@ function Text() {
         </div>
         <div className="imageBorder">
            <img className='memeImage' src={textImage.randomImage} alt="" />
+           <h2 className="meme--text top">{textImage.topText}</h2>
+           <h2 className="meme--text bottom">{textImage.bottomText}</h2>
         </div>
         
         
