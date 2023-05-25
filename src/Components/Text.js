@@ -20,7 +20,12 @@ function Text() {
         }))
     }
     
-    function handlechange() {
+    function handlechange(event) {
+      const {name, value} = event.target
+      setTextImage( prevText => ({
+        ...prevText,
+        [name] : value
+      })) 
       
     }
 
