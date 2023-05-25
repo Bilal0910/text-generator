@@ -19,6 +19,10 @@ function Text() {
                 randomImage : url
         }))
     }
+    
+    function handlechange() {
+      
+    }
 
 
   return (
@@ -26,11 +30,17 @@ function Text() {
         <div className='form'>
           <input className='form-input' 
                  type="text" 
-                 placeholder='write here'
+                 placeholder='top text here'
+                 name='topText'
+                 value={textImage.topText}
+                 onChange={handlechange}
           />
           <input className='form-input'
                  type="text"
-                 placeholder='write here'
+                 placeholder='bottom text here'
+                 name='bottomText'
+                 value={textImage.bottomtext}
+                 onChange={handlechange}
           />
           <button className='form-button'
            onClick={getImages}
