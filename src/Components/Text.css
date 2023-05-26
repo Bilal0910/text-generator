@@ -31,16 +31,25 @@ main {
 
 }
 
-.memeImage {
-    max-width: 95%;
-    margin-top: 20px;
-}
-
 .imageBorder {
     display: flex;
     justify-content: center;
 
 }
+
+
+/* .imageBorder {
+    position: relative;
+} */
+
+
+.memeImage {
+    max-width: 90%;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+
 
 .meme--text {
     position: absolute;
@@ -67,7 +76,7 @@ main {
         2px 2px 5px #000;
 }
 
-.bottom {
+/* .bottom {
     margin-top: 320px;
     display: flex;
     justify-content: center;
@@ -77,4 +86,12 @@ main {
     margin-top: 20px;
     display: flex;
     justify-content: center;
+} */
+
+/* .bottom {
+    bottom: 0;
 }
+
+.top {
+    top:0;
+} */

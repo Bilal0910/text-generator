@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './Text.css'
-import data from '../data.js'
 
 function Text() {
 
@@ -10,14 +9,19 @@ function Text() {
         randomImage : "http://i.imgflip.com/1bij.jpg"
     })
 
+    const [ allMemes, setAllMemes] = useState([])
+
     useEffect( () => {
+      fetch("https://api.imgflip.com/get_memes")
+      .then(res => res.json())
+      .then( data => setAllMemes(data.data.memes))
 
     }, [textImage])
 
     function getImages() {
-        const imageArray = data.data.memes
-        const randomNum = Math.floor(Math.random() * imageArray.length)
-        const url = imageArray[randomNum].url
+
+        const randomNum = Math.floor(Math.random() * allMemes.length)
+        const url = allMemes[randomNum].url
         setTextImage( prevText => ({
                 ...prevText,
                 randomImage : url
