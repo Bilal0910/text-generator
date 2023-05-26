@@ -38,9 +38,9 @@ main {
 }
 
 
-/* .imageBorder {
+.imageBorder {
     position: relative;
-} */
+}
 
 
 .memeImage {
@@ -76,22 +76,10 @@ main {
         2px 2px 5px #000;
 }
 
-/* .bottom {
-    margin-top: 320px;
-    display: flex;
-    justify-content: center;
-}
-
-.top {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-} */
-
-/* .bottom {
+.bottom {
     bottom: 0;
 }
 
 .top {
     top:0;
-} */
+}
