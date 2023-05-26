@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Text.css'
 import data from '../data.js'
 
@@ -9,6 +9,10 @@ function Text() {
         bottomtext : "",
         randomImage : "http://i.imgflip.com/1bij.jpg"
     })
+
+    useEffect( () => {
+
+    }, [textImage])
 
     function getImages() {
         const imageArray = data.data.memes
